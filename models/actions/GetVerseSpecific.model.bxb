@@ -45,10 +45,133 @@ action (GetVerseSpecific) {
       }
 
       // Validate verse number
-      // TODO gonna need some conditionals 
-      //  that verify the verse bounds based on
-      //  which chapter was selected
+      // Code-generation ftw I'm a beast thanx
+      //  for (let i = 1; i < 19; i++) {
+      // 	  let max = Object.keys(BHAGAVAD_GITA[i]).length;
+      // 	  let str = 'if (numChapter == ' + i + ' && (numVerse < 1 || numVerse > ' + max + ')) {';
+      // 		str += '\n\t\t\t\t\tprompt {\n\t\t\t\t\t\tdialog {\n\t\t\t\t\t\t\ttemplate (For chapter ' + i + ', request a verse from 1 to ' + max + ', inlusive)\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}';
+      //    console.log(str); str = '';
+      // }
       validate {
+        if (numChapter == 1 && (numVerse < 1 || numVerse > 46)) {
+	        prompt {
+        	dialog {
+	          template (For chapter 1, request a verse from 1 to 46, inlusive)
+            }
+          }
+        }
+        if (numChapter == 2 && (numVerse < 1 || numVerse > 72)) {
+        	prompt {
+	          dialog {
+	            template (For chapter 2, request a verse from 1 to 72, inlusive)
+            }
+          }
+        }
+        if (numChapter == 3 && (numVerse < 1 || numVerse > 43)) {
+	        prompt {
+	          dialog {
+	            template (For chapter 3, request a verse from 1 to 43, inlusive)
+            }
+          }
+        }
+        if (numChapter == 4 && (numVerse < 1 || numVerse > 42)) {
+					prompt {
+						dialog {
+							template (For chapter 4, request a verse from 1 to 42, inlusive)
+					  }
+				  }
+			  }
+        if (numChapter == 5 && (numVerse < 1 || numVerse > 29)) {
+					prompt {
+						dialog {
+							template (For chapter 5, request a verse from 1 to 29, inlusive)
+					  }
+				  }
+				}
+        if (numChapter == 6 && (numVerse < 1 || numVerse > 47)) {
+					prompt {
+						dialog {
+							template (For chapter 6, request a verse from 1 to 47, inlusive)
+						}
+					}
+				}
+        if (numChapter == 7 && (numVerse < 1 || numVerse > 30)) {
+					prompt {
+						dialog {
+							template (For chapter 7, request a verse from 1 to 30, inlusive)
+						}
+					}
+				}
+        if (numChapter == 8 && (numVerse < 1 || numVerse > 28)) {
+					prompt {
+						dialog {
+							template (For chapter 8, request a verse from 1 to 28, inlusive)
+						}
+					}
+				}
+        if (numChapter == 9 && (numVerse < 1 || numVerse > 34)) {
+					prompt {
+						dialog {
+							template (For chapter 9, request a verse from 1 to 34, inlusive)
+						}
+					}
+				}
+        if (numChapter == 10 && (numVerse < 1 || numVerse > 42)) {
+					prompt {
+						dialog {
+							template (For chapter 10, request a verse from 1 to 42, inlusive)
+						}
+					}
+				}
+        if (numChapter == 11 && (numVerse < 1 || numVerse > 55)) {
+					prompt {
+						dialog {
+							template (For chapter 11, request a verse from 1 to 55, inlusive)
+						}
+					}
+				}
+        if (numChapter == 12 && (numVerse < 1 || numVerse > 20)) {
+					prompt {
+						dialog {
+							template (For chapter 12, request a verse from 1 to 20, inlusive)
+						}
+					}
+				}
+        if (numChapter == 13 && (numVerse < 1 || numVerse > 35)) {
+					prompt {
+						dialog {
+							template (For chapter 13, request a verse from 1 to 35, inlusive)
+						}
+					}
+				}
+        if (numChapter == 14 && (numVerse < 1 || numVerse > 27)) {
+					prompt {
+						dialog {
+							template (For chapter 14, request a verse from 1 to 27, inlusive)
+						}
+					}
+				}
+        if (numChapter == 15 && (numVerse < 1 || numVerse > 20)) {
+					prompt {
+						dialog {
+							template (For chapter 15, request a verse from 1 to 20, inlusive)
+						}
+					}
+				}
+        if (numChapter == 16 && (numVerse < 1 || numVerse > 24)) {
+					prompt {
+						dialog {
+							template (For chapter 16, request a verse from 1 to 24, inlusive)
+						}
+					}
+				}
+        if (numChapter == 17 && (numVerse < 1 || numVerse > 28)) {
+					prompt {
+						dialog {
+							template (For chapter 17, request a verse from 1 to 28, inlusive)
+						}
+					}
+				}
         if (numChapter == 18 && (numVerse < 1 || numVerse > 78)) {
           prompt {
             dialog {
