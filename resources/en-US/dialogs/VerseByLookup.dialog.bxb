@@ -4,5 +4,7 @@ dialog (Result) {
       from-output: GetVerseSpecific (lookupOutput)
     }
 
-  template("You've got a ${value(lookupResult.chapter)}:${value(lookupResult.verse)}")
+  // template("You've got a ${value(lookupResult.chapter)}:${value(lookupResult.verse)}")
+    template("${value(lookupResult.SlokaSanskrit)}\n\n${value(lookupResult.SlokaMeaning)}")
+
 }

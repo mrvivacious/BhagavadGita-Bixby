@@ -1,5 +1,15 @@
 structure (VerseByLookupConcept) {
   description (A verse queried for specifically by chapter-verse numbers)
+  // The computed values
+  property (SlokaSanskrit) {
+    type (SlokaSanskritConcept)
+  }
+  
+  property (SlokaMeaning) {
+    type (SlokaMeaningConcept)
+  }
+  
+  // Our user-submitted values
   property (chapter) {
     type (NumChapterConcept)
     min (Required) max (One)
