@@ -1,0 +1,12 @@
+structure (VerseByLookupConcept) {
+  description (A verse queried for specifically by chapter-verse numbers)
+  property (chapter) {
+    type (NumChapterConcept)
+    min (Required) max (One)
+  }
+
+  property (verse) {
+    type (NumVerseConcept)
+    min (Required) max (One)
+  }
+}

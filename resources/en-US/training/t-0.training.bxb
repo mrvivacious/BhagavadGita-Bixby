@@ -1,0 +1,5 @@
+train (t-0b4bry8mto4silgcpok2cohtr) {
+  utterance ("[g:VerseByLookupConcept] read chapter (1)[v:NumChapterConcept] verse (1)[v:NumVerseConcept]")
+  plan (Y2Bh0M0tKsssS0zOzC8t1kvKSExPLEtMcc8sSdQLSy0qTnWq9MnPzy4tcM7PS04tKGHQxKncPbUErCO4IDU5My0zmUELp1K/0lznjMSCktQimLEa+NSCjYWpZGZgZGACkgxAGgQhAMQHiwIA)
+  last-modified (1574512567565)
+}

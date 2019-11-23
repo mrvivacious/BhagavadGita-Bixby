@@ -1,0 +1,8 @@
+dialog (Result) {
+  match: 
+    VerseByLookupConcept (lookupResult) {
+      from-output: GetVerseSpecific (lookupOutput)
+    }
+
+  template("You've got a ${value(lookupResult.chapter)}:${value(lookupResult.verse)}")
+}

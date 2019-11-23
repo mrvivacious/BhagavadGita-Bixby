@@ -1,0 +1,65 @@
+action (GetVerseSpecific) {
+  description (__DESCRIPTION__)
+
+  type (Calculation)
+  
+  collect {
+    input (numChapter) {
+      type (NumChapterConcept)
+      min (Required) max (One)
+
+      // Default to chapter 1
+      default-init {
+        intent {
+          goal {NumChapterConcept}
+          value {
+            NumChapterConcept (1)
+          }
+        }
+      }
+
+      // Validate chapter number is between 1 and 18
+      validate {
+        if (numChapter < 1 || numChapter > 18) {
+          prompt {
+            dialog {
+              template (Please request a chapter from 1 to 18, inclusive)
+            }
+          }
+        }
+      }
+    }
+
+    input (numVerse) {
+      type (NumVerseConcept)
+      min (Required) max (One)
+
+      // Default to the first verse
+      default-init {
+        intent {
+          goal {NumVerseConcept}
+          value {
+            NumVerseConcept (1)
+          }
+        }
+      }
+
+      // Validate verse number
+      // TODO gonna need some conditionals 
+      //  that verify the verse bounds based on
+      //  which chapter was selected
+      validate {
+        if (numChapter == 18 && (numVerse < 1 || numVerse > 78)) {
+          prompt {
+            dialog {
+              template (For chapter 18, request a verse from 1 to 78, inclusive)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Lookup verse by specific request concept
+  output (VerseByLookupConcept)
+}
