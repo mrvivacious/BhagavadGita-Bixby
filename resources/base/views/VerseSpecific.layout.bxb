@@ -1,14 +1,16 @@
 layout {
   match: VerseByLookupConcept (this)
-  mode (Summary)
+
+  // Use "Summary" flag for DEBUG
+  mode (Details)
 
   content {
     section {
       content {
-        paragraph {
-          value ("#{value(this)}")
-          style (Title_L)
-        }
+        // paragraph {
+        //   value ("#{value(this)}")
+        //   style (Title_L)
+        // }
       }
     }
   }
