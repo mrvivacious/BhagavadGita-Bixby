@@ -4,6 +4,11 @@ endpoints {
       accepted-inputs (numChapter, numVerse)
       local-endpoint (lookupVerse.js)
     }
+
+    // action-endpoint (FindVerse) {
+    //   accepted-inputs (searchTerm)
+    //   local-endpoint (FindVerse.js)
+    // }
     // Uncomment the lines below and enter the information for actions, inputs, and the appropriate local or remote endpoints
     // action-endpoint (__ACTION_NAME__) {
     //   accepted-inputs (__LIST_OF_ACTION_INPUTS__)

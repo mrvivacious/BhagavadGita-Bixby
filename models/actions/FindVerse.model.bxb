@@ -1,0 +1,12 @@
+action (FindVerse) {
+  description (__DESCRIPTION__)
+  type (Search)
+
+  collect {
+    input (searchTerm) {
+      type (SearchTermConcept)
+      min (Optional) max (One)
+    }
+  }
+  output (VerseAudioStructure)
+}

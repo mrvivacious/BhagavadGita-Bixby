@@ -7,10 +7,10 @@ layout {
   content {
     section {
       content {
-        // paragraph {
-        //   value ("#{value(this)}")
-        //   style (Title_L)
-        // }
+        paragraph {
+          value ("#{value(this.SlokaSanskrit)}")
+          style (Title_L)
+        }
       }
     }
   }

@@ -5,6 +5,6 @@ dialog (Result) {
     }
 
   // template("You've got a ${value(lookupResult.chapter)}:${value(lookupResult.verse)}")
-    template("${value(lookupResult.SlokaSanskrit)}\n\n${value(lookupResult.SlokaMeaning)}")
+    template("${value(lookupResult.SlokaMeaning)}")
 
 }

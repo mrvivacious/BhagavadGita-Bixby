@@ -1,9 +1,28 @@
 capsule-info {
   display-name (Bhagavad Gita)
-  dispatch-name (The Bhagavad Gita)
+  dispatch-name (Bhagavad Gita)
   developer-name (Vivek Bhookya)
-  // icon-asset (icon.png)
-  description ("__DESCRIPTION__")
+  
+  icon-asset (../assets/images/om-48.png)
+
+  description (Ask Bixby to recite the English translations of the Sanskrit verses from the Bhagavad Gita, a sacred text from India. Both the translation and the English phonetic of the requested verse will be displayed on devices with screens. Icon from https://icons8.com)
   // website-url (https://example.com/)
   // terms-url (https://example.com/terms-of-use/)
+
+  dispatch-aliases {
+    alias (Gita)
+  }
+
+   search-keywords {
+    keyword (Bhagavad Gita)
+    keyword (Gita)
+    keyword (Religion)
+    keyword (Bible)
+    keyword (Hindu)
+    keyword (India)
+    keyword (Krishna)
+    keyword (Krsna)
+    keyword (Religious)
+    keyword (Scripture)
+  }
 }
